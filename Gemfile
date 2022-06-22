@@ -44,13 +44,16 @@ gem "bootsnap", require: false
 
 gem "shrine", "~> 3.4"
 
-gem 'country_select', '~> 6.0'
+gem "country_select", "~> 6.0"
 
 gem "simple_form", "~> 5.1"
 
+gem "bootstrap", "~> 5.1.3"
 
 # Use Sass to process CSS
-# gem "sassc-rails"
+gem "sassc-rails", "~> 2.1.2"
+
+gem "devise", "~> 4.8.1"
 
 # Use Active Storage variants [https://guides.rubyonrails.org/active_storage_overview.html#transforming-images]
 # gem "image_processing", "~> 1.2"
