@@ -1,3 +1,26 @@
 <h1>Bienvenue <%= user_signed_in? ?
                   "#{current_user.first_name} #{current_user.last_name}"  : 'visiteur' %> !
 </h1>
+
+<%# buttons %>
+<div class="mb-4">
+  <button type="button" class="btn btn-primary ms-2">Découvrir notre process de sélection</button>
+  <button type="button" class="btn btn-secondary ms-2">Découvrir notre process de sélection</button>
+  <button type="button" class="btn btn-outline-primary ms-2">Découvrir notre process de sélection</button>
+  <button type="button" class="btn btn-outline-secondary ms-2">Découvrir notre process de sélection</button>
+</div>
+
+<%# badges %>
+<div class="mb-4">
+  <button type="button" class="btn btn-primary ms-2">Non envoyé</button>
+  <button type="button" class="btn btn-primary ms-2">En attente de validation</button>
+  <button type="button" class="btn btn-primary ms-2">Refusé</button>
+  <button type="button" class="btn btn-primary ms-2">Accepté</button>
+</div>
+
+<%# filter %>
+<div>
+  <button type="button" class="btn btn-outline-primary ms-2">Placeholder</button>
+  <button type="button" class="btn btn-outline-primary ms-2">Placeholder</button>
+  <button type="button" class="btn btn-outline-primary ms-2">Placeholder</button>
+</div>

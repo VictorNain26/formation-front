@@ -1,0 +1,70 @@
+.btn {
+  color: $white;
+  border-style: unset;
+}
+
+.btn-primary {
+  &:hover, &:active {
+    background-color: $primary;
+  }
+
+  &:hover {
+    box-shadow: $btn-shadow-hover;
+  }
+
+  &:active {
+    box-shadow: $btn-shadow-active;
+  }
+}
+
+.btn-secondary {
+  &:hover, &:active {
+    background-color: $secondary;
+    color: $white;
+  }
+
+  &:hover {
+    box-shadow: $btn-shadow-hover;
+  }
+
+  &:active {
+    box-shadow: $btn-shadow-active;
+  }
+}
+
+.btn-outline-primary {
+  color: $dark;
+  background-color: $white;
+  @include outline(0.313rem, solid, $primary);
+
+  &:hover, &:active {
+    background-color: $white;
+    color: $dark;
+  }
+
+  &:hover {
+    box-shadow: $btn-shadow-hover;
+  }
+
+  &:active {
+    box-shadow: $btn-shadow-active;
+  }
+}
+
+.btn-outline-secondary {
+  background-color: $primary;
+  @include outline(0.313rem, solid, $warning);
+
+  &:hover, &:active {
+    background-color: $primary;
+    color: $white;
+  }
+
+  &:hover {
+    box-shadow: $btn-shadow-hover;
+  }
+
+  &:active {
+    box-shadow: $btn-shadow-active;
+  }
+}

@@ -1,20 +1,20 @@
 //Variables
-@import "variables/variables";
+@import "variables/fonts";
 @import "variables/colors";
 @import "variables/buttons";
 @import "variables/cards";
 @import "variables/inputs";
-@import "variables/fonts";
+@import "variables/shadow";
+@import "variables/variables";
 
 // Libraries
 @import "bootstrap";
 
 // Mixins
+@import "mixins/outline";
 
 // Components
 @import "components/buttons";
-@import "components/cards";
-@import "components/forms";
 
 // Global
 @import "rules";
