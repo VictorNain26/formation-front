@@ -4,9 +4,10 @@
 @import "variables/cards";
 @import "variables/inputs";
 @import "variables/shadow";
-@import "variables/variables";
 @import "variables/badges";
 @import "variables/buttons";
+@import "variables/forms";
+@import "variables/variables";
 
 // Libraries
 @import "bootstrap";
@@ -16,6 +17,7 @@
 
 // Components
 @import "components/buttons";
+@import "components/forms";
 
 // Global
 @import "rules";
