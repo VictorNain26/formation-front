@@ -35,7 +35,7 @@
 .btn-outline-primary {
   color: $dark;
   background-color: $white;
-  @include outline(0.313rem, solid, $primary);
+  @include outline(0.313rem, solid, $secondary);
 
   &:hover, &:active {
     background-color: $white;
