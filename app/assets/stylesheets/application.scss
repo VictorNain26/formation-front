@@ -2,7 +2,7 @@
 @import "variables/fonts";
 @import "variables/colors";
 @import "variables/cards";
-@import "variables/inputs";
+@import "variables/paginations";
 @import "variables/shadow";
 @import "variables/badges";
 @import "variables/buttons";
@@ -13,11 +13,14 @@
 @import "bootstrap";
 
 // Mixins
-@import "mixins/outline";
 
 // Components
 @import "components/buttons";
 @import "components/forms";
+@import "components/paginations";
+@import "components/cards";
+@import "components/progress";
+@import "components/file_upload";
 
 // Global
 @import "rules";

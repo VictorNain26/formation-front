@@ -1,4 +1,0 @@
-@mixin outline($width, $style, $color) {
-  outline: $width $style $color;
-  outline-offset: -$width;
-}

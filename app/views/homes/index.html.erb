@@ -1,21 +1,99 @@
-<%# buttons %>
+<%# Buttons %>
 <div class="mb-4 mt-4">
-  <button type="button" class="btn btn-primary ms-2">Découvrir notre process de sélection</button>
-  <button type="button" class="btn btn-secondary ms-2">Découvrir notre process de sélection</button>
-  <button type="button" class="btn btn-outline-primary ms-2">Découvrir notre process de sélection</button>
-  <button type="button" class="btn btn-outline-secondary ms-2">Découvrir notre process de sélection</button>
+  <button type="button" class="btn btn-primary ms-2 mb-2">Découvrir notre process de sélection <%= image_tag("right-arrow-white.png", class: "ms-2") %></button>
+  <button type="button" class="btn btn-secondary ms-2 mb-2">Découvrir notre process de sélection <%= image_tag("right-arrow-white.png", class: "ms-2") %></button>
+  <button type="button" class="btn btn-outline-secondary ms-2 mb-2">Découvrir notre process de sélection <%= image_tag("right-arrow-dark.png", class: "ms-2") %></button>
+  <button type="button" class="btn btn-outline-warning ms-2 mb-2">Découvrir notre process de sélection <%= image_tag("right-arrow-white.png", class: "ms-2") %></button>
 </div>
 
-<%# badges %>
-<div class="mb-4">
+<%# Badges %>
+<div class="mb-5">
   <div class="badge rounded-pill bg-dark ms-2">Non envoyé</div>
   <div class="badge rounded-pill bg-warning ms-2">En attente de validation</div>
   <div class="badge rounded-pill bg-secondary ms-2">Refusé</div>
   <div class="badge rounded-pill bg-success ms-2">Accepté</div>
 </div>
 
-<%# input %>
+<%# Input %>
 <div class="form-floating mb-4 ms-2">
   <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
-  <label for="floatingInput">Email</label>
+  <label for="floatingInput">E-mail</label>
+</div>
+
+<%# CheckBox %>
+<div class="form-check mb-4 ms-2">
+  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+</div>
+
+<%# file upload %>
+<div class="custom-file d-flex justify-content-center mb-4 ms-2">
+  <div class="d-flex w-100 justify-content-center">
+    <div class="d-flex col-4 justify-content-end">
+      <%= image_tag("download-icon.png", class: "img-file my-auto") %>
+    </div>
+    <span class="ms-3 my-auto file-content font-weight-normal text-truncate col-8 pe-4">Choisir un fichier</span>
+  </div>
+  <div class="input-container">
+    <input required="required" id="project_owner_identity_proofs_file_front" class="form-control-file custom-file-input" type="file" name="profile[identity_proofs_attributes][0][file_front]">
+  </div>
+</div>
+
+<%# pagination %>
+<div class="mb-4 ms-2">
+  <ul class="pagination pagination-sm">
+    <li class="page-item active" aria-current="page"><a class="page-link">1</a></li>
+    <li class="page-item"><a class="page-link" href="#">2</a></li>
+    <li class="page-item"><a class="page-link" href="#">3</a></li>
+  </ul>
+  <a class="page-link mb-2" href="#" aria-label="Previous">
+    <span aria-hidden="true">&lt;</span>
+  </a>
+  <div class="page-item disabled">
+    <a class="page-link mb-2" href="#" aria-label="Previous">
+      <span aria-hidden="true">&lt;</span>
+    </a>
+  </div>
+  <a class="page-link mb-2" href="#" aria-label="Next">
+    <span aria-hidden="true">&gt;</span>
+  </a>
+  <div class="page-item disabled">
+    <a class="page-link mb-2" href="#" aria-label="Next">
+      <span aria-hidden="true">&gt;</span>
+    </a>
+  </div>
+</div>
+
+<%# Cards %>
+<div class="card ms-2">
+  <%= image_tag("card-img-top.png", class: "card-img-top") %>
+  <div class="card-body">
+    <h5 class="card-title">Titre d'un projet</h5>
+    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                         Dictum ullamcorper vel dolor tellus varius.
+                         Venenatis blandit diam mauris mauris urna duis.
+    </p>
+    <div class="progress-container mb-5">
+      <p>Montant de la collecte: <span>1M €</span></p>
+      <div class="progress">
+        <div class="progress-bar" role="progressbar" style="width: 75%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+          <small>75%</small>
+        </div>
+      </div>
+    </div>
+    <div class="d-flex justify-content-around">
+      <section class="d-flex flex-column">
+        <small class="text-muted fw-light">Secteur d'activité</small>
+        <small class="text-muted fw-bold">Foodtech</small>
+      </section>
+      <div class="border border-1"></div>
+      <section class="d-flex flex-column">
+        <small class="text-muted fw-light">C.A  des 12 derniers mois</small>
+        <small class="text-muted fw-bold">1 000 000 €</small>
+      </section>
+    </div>
+  </div>
+  <div class="card-footer">
+    <%= image_tag("check.png") %>
+    <span>Financé</span>
+  </div>
 </div>

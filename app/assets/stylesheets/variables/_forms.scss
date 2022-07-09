@@ -1,3 +1,18 @@
-$form-floating-label-transform: scale(.85) translateY(-2rem) translateX(.15rem);
 $input-border-radius: 3.125rem;
-$form-floating-padding-x: 2rem;
+$input-border-color: $primary;
+$input-border-width: 2px;
+$input-focus-box-shadow: none;
+$input-focus-border-color: $primary;
+
+$form-floating-input-padding-t: 0;
+$form-floating-input-padding-b: 0;
+$form-floating-label-opacity: 1;
+$form-floating-label-transform: scale(.85) translateY(-2rem) translateX(1rem);
+$form-floating-transition: background-color .2s ease, opacity .1s ease-in-out, transform 0.2s ease-in-out;
+
+$form-check-input-border-radius: 40%;
+$form-check-input-border: 2px solid $primary;
+$form-check-input-focus-box-shadow: none;
+$form-check-input-checked-color: $primary;
+$form-check-input-checked-bg-color: $white;
+$form-check-input-checked-border-color: $primary;

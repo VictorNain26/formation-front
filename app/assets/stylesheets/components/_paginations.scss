@@ -1,0 +1,33 @@
+.disabled {
+  .page-link {
+    span {
+      color: $grey;
+    }
+  }
+}
+
+.page-link {
+  span {
+    font-size: 1.5rem;
+    padding: 0.5rem 1rem;
+    background-color: $grey;
+    border-radius: 50rem;
+    width: 2.5rem;
+    height: 2.5rem;
+    color: black;
+
+    &:hover {
+      color: $primary;
+    }
+
+    &:active {
+      color: $warning;
+    }
+  }
+}
+
+.page-item {
+  .page-link {
+    font-size: 1.25rem;
+  }
+}
