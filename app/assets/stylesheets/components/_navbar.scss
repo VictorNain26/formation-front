@@ -1,0 +1,44 @@
+.navbar {
+  min-height: 7.438rem;
+  background-color: $white;
+  border-bottom: 2px solid $grey;
+}
+
+.navbar-brand {
+  a {
+    width: 10.181rem;
+    margin-left: 5rem;
+  }
+}
+.navbar-nav {
+  padding-right: 8rem;
+  align-items: center;
+  justify-content: end;
+
+  li:first-child {
+    .nav-link:hover {
+      color: $secondary;
+    }
+  }
+}
+
+.navbar-toggler {
+  justify-content: center;
+  border: 1px solid $secondary;
+}
+
+.navbar-collapse {
+  justify-content: flex-end;
+}
+
+@media (max-width: 1400px){
+  .navbar-toggler {
+    justify-content: center;
+    border: 1px solid $secondary;
+
+  }
+  .navbar-nav {
+    margin-top: 1rem;
+    display: block;
+  }
+}
