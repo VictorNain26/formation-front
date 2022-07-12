@@ -1,0 +1,27 @@
+<ul class="navbar-nav col-10 d-xxl-none p-0 mx-2">
+  <li class="nav-item">
+    <a class="nav-link fs-5 fw-normal text-dark mx-5" href="/">Investir</a>
+  </li>
+  <% if user_signed_in? %>
+    <li class="nav-item d-flex mx-5">
+      <span class="fs-5 fw-normal text-dark">Solde du compte:</span>
+      <span class="fs-5 fw-bold text-dark ms-2">1 000€</span>
+    </li>
+    <li class="nav-item mx-5">
+      <a class="nav-link fs-5 fw-normal text-dark">
+        <%= current_user.full_name %>
+      </a>
+      <ul class="navbar-nav mt-0 mx-4 p-0" aria-labelledby="navbarDropdownMenuLink">
+        <li><a class="nav-item fs-5 fw-light text-dark" href="#">Personne Physique</a></li>
+        <li><a class="nav-item fs-5 fw-light text-dark" href="#">+ Ajouter un profil entreprise</a></li>
+      </ul>
+    </li>
+  <% else %>
+    <li class="nav-item">
+      <button type="button" class="btn btn-outline-secondary ms-5 me-4"><%= link_to "S'inscrire", new_user_registration_path %></button>
+    </li>
+    <li class="nav-item">
+      <button type="button" class="btn btn-primary"><%= link_to "Se connecter", new_user_session_path %></button>
+    </li>
+  <% end %>
+</ul>
