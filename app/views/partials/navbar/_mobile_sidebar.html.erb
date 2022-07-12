@@ -1,0 +1,48 @@
+  <li class="nav-item border-bottom border-secondary border-5 mt-4">
+    <a href="#" class="nav-link link-dark fw-normal my-3 px-5" aria-current="page">
+      <span class="col-2 me-3"><%= show_svg('icon-TDB.svg') %></span>
+      <span>Tableau de bord</span>
+    </a>
+  </li>
+  <li>
+    <a href="#" class="nav-link link-dark fw-light my-3 px-5">
+      <span class="col-2 me-3"><%= show_svg('icon.svg') %></span>
+      <span>Profil</span>
+    </a>
+  </li>
+  <li>
+    <a href="#" class="nav-link link-dark fw-light my-3 px-5">
+      <span class="col-2 me-3"><%= show_svg('icon-Docs.svg') %></span>
+      <span>Pièces justificatives</span>
+    </a>
+  </li>
+  <li>
+    <a href="#" class="nav-link link-dark fw-light my-3 px-5">
+     <span class="col-2 me-3"><%= show_svg("icon-eligibilty.svg") %></span>
+      <span class="col-10">Eligibilité</span>
+    </a>
+  </li>
+  <li>
+    <a href="#" class="nav-link link-dark fw-light my-3 px-5">
+      <span class="col-2 me-3"><%= show_svg("icon-Investissements.svg") %></span>
+      <span>Investissements</span>
+    </a>
+  </li>
+  <li>
+    <a href="#" class="nav-link link-dark fw-light my-3 px-5">
+      <span class="col-2 me-3"><%= show_svg("icon-wallet.svg") %></span>
+      <span>Porte-monnaie</span>
+    </a>
+  </li>
+  <li>
+    <a href="#" class="nav-link link-dark fw-light my-3 px-5">
+      <span class="col-2 me-3"><%= show_svg("Icon-actualite.svg") %></span>
+      <span>Actualités</span>
+    </a>
+  </li>
+  <li>
+    <%= link_to destroy_user_session_path, method: :delete, class: "nav-link link-dark fw-light my-3 px-5" do %>
+      <span class="col-2 me-3"><%= show_svg("icon-LogOut.svg") %></span>
+      <span>Déconnexion</span>
+    <% end %>
+  </li>
