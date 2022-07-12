@@ -1,9 +1,17 @@
 <%# Buttons %>
 <div class="mb-4 mt-4">
-  <button type="button" class="btn btn-primary ms-2 mb-2">Découvrir notre process de sélection <%= image_tag("right-arrow-white.png", class: "ms-2") %></button>
-  <button type="button" class="btn btn-secondary ms-2 mb-2">Découvrir notre process de sélection <%= image_tag("right-arrow-white.png", class: "ms-2") %></button>
-  <button type="button" class="btn btn-outline-secondary ms-2 mb-2">Découvrir notre process de sélection <%= image_tag("right-arrow-dark.png", class: "ms-2") %></button>
-  <button type="button" class="btn btn-outline-warning ms-2 mb-2">Découvrir notre process de sélection <%= image_tag("right-arrow-white.png", class: "ms-2") %></button>
+  <button type="button" class="btn btn-primary ms-2 mb-2">
+    Découvrir notre process de sélection <span class="ms-2"><%= show_svg("right-arrow-light") %></span>
+  </button>
+  <button type="button" class="btn btn-secondary ms-2 mb-2">
+    Découvrir notre process de sélection<span class="ms-2"><%= show_svg("right-arrow-light") %></span>
+  </button>
+  <button type="button" class="btn btn-outline-secondary ms-2 mb-2">
+    Découvrir notre process de sélection <span class="ms-2"><%= show_svg("right-arrow-dark") %></span>
+  </button>
+  <button type="button" class="btn btn-outline-warning ms-2 mb-2">
+    Découvrir notre process de sélection<span class="ms-2"><%= show_svg("right-arrow-light") %></span>*
+  </button>
 </div>
 
 <%# Badges %>
@@ -29,12 +37,16 @@
 <div class="custom-file d-flex justify-content-center mb-4 ms-2">
   <div class="d-flex w-100 justify-content-center">
     <div class="d-flex col-4 justify-content-end">
-      <%= image_tag("download-icon.png", class: "img-file my-auto") %>
+    <span class="img-file my-auto"><%= show_svg("download-icon") %></span>
     </div>
     <span class="ms-3 my-auto file-content font-weight-normal text-truncate col-8 pe-4">Choisir un fichier</span>
   </div>
   <div class="input-container">
-    <input required="required" id="project_owner_identity_proofs_file_front" class="form-control-file custom-file-input" type="file" name="profile[identity_proofs_attributes][0][file_front]">
+    <input required="required"
+           id="project_owner_identity_proofs_file_front"
+           class="form-control-file custom-file-input"
+           type="file"
+           name="profile[identity_proofs_attributes][0][file_front]">
   </div>
 </div>
 
@@ -64,18 +76,23 @@
 </div>
 
 <%# Cards %>
-<div class="card ms-2">
-  <%= image_tag("card-img-top.png", class: "card-img-top") %>
-  <div class="card-body">
-    <h5 class="card-title">Titre d'un projet</h5>
-    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+<div class='card shadow-lg ms-2 mb-4'>
+  <span class="card-img-top shadow-lg"><%= show_svg("card-img-top") %></span>
+  <div class="card-body shadow-lg mt-n5 p-4 bg-white">
+    <h5 class="card-title mb-4 fs-2 fw-normal text-dark">Titre d'un projet</h5>
+    <p class="card-text mb-4 fs-6 fw-light text-dark">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                          Dictum ullamcorper vel dolor tellus varius.
                          Venenatis blandit diam mauris mauris urna duis.
     </p>
     <div class="progress-container mb-5">
       <p>Montant de la collecte: <span>1M €</span></p>
       <div class="progress">
-        <div class="progress-bar" role="progressbar" style="width: 75%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+        <div class="progress-bar"
+             role="progressbar"
+             style="width: 75%;"
+             aria-valuenow="75"
+             aria-valuemin="0"
+             aria-valuemax="100">
           <small>75%</small>
         </div>
       </div>
@@ -92,8 +109,8 @@
       </section>
     </div>
   </div>
-  <div class="card-footer">
-    <%= image_tag("check.png") %>
+  <div class="card-footer d-flex justify-content-center p-3 shadow-lg">
+    <span class="me-2"><%= show_svg("check") %></span>
     <span>Financé</span>
   </div>
 </div>

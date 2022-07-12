@@ -1,12 +1,11 @@
 //Variables
-@import "variables/fonts";
 @import "variables/colors";
-@import "variables/cards";
-@import "variables/paginations";
-@import "variables/shadow";
+@import "variables/fonts";
 @import "variables/badges";
 @import "variables/buttons";
+@import "variables/cards";
 @import "variables/forms";
+@import "variables/paginations";
 @import "variables/variables";
 
 // Libraries
@@ -16,9 +15,10 @@
 
 // Components
 @import "components/buttons";
+@import "components/cards";
+@import "components/file_upload";
 @import "components/forms";
 @import "components/paginations";
-@import "components/cards";
 @import "components/progress";
 @import "components/file_upload";
 @import "components/navbar";
