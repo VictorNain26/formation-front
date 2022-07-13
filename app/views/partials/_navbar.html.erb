@@ -1,23 +1,25 @@
 <header>
-  <nav class="navbar navbar-expand-xxl navbar-light bg-light">
-    <div class="container-fluid">
-      <div class="navbar-brand col-auto">
+  <nav class="navbar navbar-expand-lg navbar-white">
+    <div class="container-fluid justify-content-between">
+      <div class="navbar-brand d-flex justify-content-center col col-lg-2 m-0">
         <%= link_to root_path do %>
-          <%= image_tag "logo.png" %>
+          <%= show_svg("logo", width: "100%", alt: "Soul Invest logo") %>
         <% end %>
       </div>
-      <button class="navbar-toggler justify-content-center border border-secondary"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#navbarToggler"
-              aria-controls="navbarToggler"
-              aria-expanded="false"
-              aria-label="Toggle navigation">
+      <button
+        class="navbar-toggler justify-content-center border border-secondary"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarToggler"
+        aria-controls="navbarToggler"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse justify-content-end" id="navbarToggler">
-        <%= render 'partials/navbar/navs'%>
-        <%= render 'partials/navbar/mobile_navs'%>
+      <div class="collapse navbar-collapse justify-content-end col me-5" id="navbarToggler">
+        <%= render 'partials/navbar/navs' %>
+        <%= render 'partials/navbar/mobile_navs' %>
       </div>
     </div>
   </nav>
