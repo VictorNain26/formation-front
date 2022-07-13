@@ -27,6 +27,6 @@
   }
 }
 
-input[type="file"]::-webkit-file-upload-button {
+input[type=file]::file-selector-button {
   cursor: pointer;
 }
