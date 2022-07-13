@@ -1,11 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
-@font-face {font-family: "Co";
-            src: url("//db.onlinewebfonts.com/t/b9f645c1cc5cb8e2dc45b791ab656622.eot");
-            src: url("//db.onlinewebfonts.com/t/b9f645c1cc5cb8e2dc45b791ab656622.eot?#iefix") format("embedded-opentype"),
-            url("//db.onlinewebfonts.com/t/b9f645c1cc5cb8e2dc45b791ab656622.woff2") format("woff2"),
-            url("//db.onlinewebfonts.com/t/b9f645c1cc5cb8e2dc45b791ab656622.woff") format("woff"),
-            url("//db.onlinewebfonts.com/t/b9f645c1cc5cb8e2dc45b791ab656622.ttf") format("truetype"),
-            url("//db.onlinewebfonts.com/t/b9f645c1cc5cb8e2dc45b791ab656622.svg#Co") format("svg"); }
+@font-face {
+  font-family: "Co";
+  src: url(b9f645c1cc5cb8e2dc45b791ab656622.ttf) format("truetype");
+}
 
 $primary-font: "Roboto", sans-serif;
 $secondary-family: "Co", sans-serif;

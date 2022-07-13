@@ -1,45 +1,21 @@
 .card {
-  width: 27rem;
-  height: 15.438rem;
-  border-radius: 3.125rem 3.125rem 0 0;
-  box-shadow: 0px 0px 30px rgba($dark, 0.3);
+  max-width: 27rem;
 
-  .card-footer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 1rem;
-    box-shadow: 0 1px 2px 0 rgba($dark, 0.3);
-    border-radius: 0 0 50rem 50rem;
-    background-color: #EBEBEB;
-    border: unset;
-
-    img {
-      margin-right: 0.5rem;
-    }
-  }
-  .card-img-top {
-    border-radius: 3.125rem 3.125rem 0 0;
-  }
   .card-body {
-    margin-top: -2.9rem;
-    background-color: $white;
-    padding: 2rem;
     border-radius: 3.125rem 3.125rem 0 0;
-    box-shadow: 0px 0px 30px rgba($dark, 0.3);
 
     .card-title {
-      margin-bottom: 1.625rem;
       font-family: $secondary-family;
-      font-size: 2rem;
-      font-weight: 400;
-      color: $dark;
     }
+
     .card-text {
-      font-size: 1rem;
-      font-weight: 300;
       line-height: 1.188rem;
-      color: $dark;
     }
+  }
+
+  .card-footer {
+    align-items: center;
+    background-color: $light;
+    border: unset;
   }
 }

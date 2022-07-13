@@ -5,6 +5,7 @@ $btn-font-size: 1.25rem;
 $btn-line-height: 1.465rem;
 $btn-font-weight: 500;
 $btn-border-radius: 50rem;
+$btn-box-shadow: 0px 0px 10px rgba($dark, 0.3);
 $btn-transition: color .3s ease-in-out,
                  background-color .3s ease-in-out,
                  border-color .3s ease-in-out,
@@ -12,3 +13,4 @@ $btn-transition: color .3s ease-in-out,
 $btn-focus-width: unset;
 $btn-focus-box-shadow: unset;
 $btn-border-width: 0.4rem;
+$btn-active-box-shadow: 0px 0px 30px rgba($dark, 0.2);

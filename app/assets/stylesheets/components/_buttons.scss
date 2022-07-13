@@ -3,14 +3,6 @@
     background-color: $primary;
   }
 
-  &:hover {
-    box-shadow: $btn-shadow-hover;
-  }
-
-  &:active {
-    box-shadow: $btn-shadow-active;
-  }
-
   a {
     color: $white;
   }
@@ -22,14 +14,6 @@
     background-color: $secondary;
     color: $white;
   }
-
-  &:hover {
-    box-shadow: $btn-shadow-hover;
-  }
-
-  &:active {
-    box-shadow: $btn-shadow-active;
-  }
 }
 
 .btn-outline-secondary {
@@ -40,14 +24,6 @@
   &:hover, &:active, &:focus {
     background-color: $white;
     color: $dark;
-  }
-
-  &:hover {
-    box-shadow: $btn-shadow-hover;
-  }
-
-  &:active {
-    box-shadow: $btn-shadow-active;
   }
 
   a {
@@ -62,13 +38,5 @@
   &:hover, &:active, &:focus {
     background-color: $primary;
     color: $white;
-  }
-
-  &:hover {
-    box-shadow: $btn-shadow-hover;
-  }
-
-  &:active {
-    box-shadow: $btn-shadow-active;
   }
 }
