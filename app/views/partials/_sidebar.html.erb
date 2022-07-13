@@ -1,9 +1,9 @@
 <ul class="sidebar nav nav-pills flex-column col-2 shadow d-none d-xxl-flex">
   <li class="nav-item border-bottom border-secondary border-5">
-    <a href="#" class="nav-link link-dark fw-normal my-3 px-5" aria-current="page">
+    <%= link_to dashboard_index_path, class: "nav-link link-dark fw-normal my-3 px-5" do %>
       <span class="col-2 me-3"><%= show_svg('icon-TDB.svg') %></span>
       <span>Tableau de bord</span>
-    </a>
+    <% end %>
   </li>
   <li>
     <a href="#" class="nav-link link-dark fw-light my-3 px-5">

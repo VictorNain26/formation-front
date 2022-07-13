@@ -4,5 +4,7 @@ Rails.application.routes.draw do
     get '/users/sign_out' => 'devise/sessions#destroy'
   end
 
+  resources :dashboard, only: :index
+
   root 'homes#index'
 end
