@@ -11,11 +11,9 @@
   </head>
   <body>
     <%= render "partials/navbar"%>
-    <section class="d-flex flex-row">
-      <%= render "partials/sidebar"%>
-      <main class="px-5 mx-5 mt-5 w-100">
-        <%= yield %>
-      </main>
-    </section>
+    <%= render "partials/sidebar"%>
+    <main class="mt-5 d-flex justify-content-center">
+      <%= yield %>
+    </main>
   </body>
 </html>

@@ -1,132 +1,134 @@
-<%# Buttons %>
-<div class="mb-4 mt-4">
-  <button type="button" class="btn btn-primary ms-2 mb-2">
-    Découvrir notre process de sélection <%= show_svg("right-arrow-light", class: "ms-2") %>
-  </button>
-  <button type="button" class="btn btn-secondary ms-2 mb-2">
-    Découvrir notre process de sélection <%= show_svg("right-arrow-light", class: "ms-2") %>
-  </button>
-  <button type="button" class="btn btn-outline-secondary ms-2 mb-2">
-    Découvrir notre process de sélection <%= show_svg("right-arrow-dark", class: "ms-2") %>
-  </button>
-  <button type="button" class="btn btn-outline-warning ms-2 mb-2">
-    Découvrir notre process de sélection <%= show_svg("right-arrow-light", class: "ms-2") %>
-  </button>
-</div>
-
-<%# Badges %>
-<div class="mb-5">
-  <span class="badge rounded-pill bg-dark ms-2">Non envoyé</span>
-  <span class="badge rounded-pill bg-warning ms-2">En attente de validation</span>
-  <span class="badge rounded-pill bg-secondary ms-2">Refusé</span>
-  <span class="badge rounded-pill bg-success ms-2">Accepté</span>
-</div>
-
-<%# Input %>
-<div class="form-floating mb-4 ms-2">
-  <input
-    type="email"
-    class="form-control"
-    id="floatingInput"
-    placeholder="name@example.com"
-  >
-  <label for="floatingInput">E-mail</label>
-</div>
-
-<%# CheckBox %>
-<div class="form-check mb-4 ms-2">
-  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-</div>
-
-<%# file upload %>
-<div class="custom-file d-flex justify-content-center mb-4 ms-2">
-  <div class="d-flex w-100 justify-content-center">
-    <div class="d-flex col-4 justify-content-end">
-    <%= show_svg("download-icon", class: "img-file my-auto") %>
-    </div>
-    <span class="ms-3 my-auto file-content font-weight-normal text-truncate col-8 pe-4">
-      Choisir un fichier
-    </span>
+<section class="d-flex flex-column col-11 col-lg-8 ms-lg-5">
+  <%# Buttons %>
+  <div class="mb-4 mt-4">
+    <button type="button" class="btn btn-primary ms-2 mb-2">
+      Découvrir notre process de sélection <%= show_svg("right-arrow-light", class: "ms-2") %>
+    </button>
+    <button type="button" class="btn btn-secondary ms-2 mb-2">
+      Découvrir notre process de sélection <%= show_svg("right-arrow-light", class: "ms-2") %>
+    </button>
+    <button type="button" class="btn btn-outline-secondary ms-2 mb-2">
+      Découvrir notre process de sélection <%= show_svg("right-arrow-dark", class: "ms-2") %>
+    </button>
+    <button type="button" class="btn btn-outline-warning ms-2 mb-2">
+      Découvrir notre process de sélection <%= show_svg("right-arrow-light", class: "ms-2") %>
+    </button>
   </div>
-  <div class="input-container">
+
+  <%# Badges %>
+  <div class="mb-5">
+    <span class="badge rounded-pill bg-dark ms-2">Non envoyé</span>
+    <span class="badge rounded-pill bg-warning ms-2">En attente de validation</span>
+    <span class="badge rounded-pill bg-secondary ms-2">Refusé</span>
+    <span class="badge rounded-pill bg-success ms-2">Accepté</span>
+  </div>
+
+  <%# Input %>
+  <div class="form-floating mb-4 ms-2">
     <input
-      required="required"
-      id="project_owner_identity_proofs_file_front"
-      class="form-control-file custom-file-input"
-      type="file"
-      name="profile[identity_proofs_attributes][0][file_front]"
+      type="email"
+      class="form-control"
+      id="floatingInput"
+      placeholder="name@example.com"
     >
+    <label for="floatingInput">E-mail</label>
   </div>
-</div>
 
-<%# pagination %>
-<div class="mb-4 ms-2">
-  <ul class="pagination pagination-sm">
-    <li class="page-item active" aria-current="page">
-      <a class="page-link">1</a>
-    </li>
-    <li class="page-item">
-      <a class="page-link" href="#">2</a>
-    </li>
-    <li class="page-item">
-      <a class="page-link" href="#">3</a>
-    </li>
-  </ul>
-  <a class="page-link mb-2" href="#" aria-label="Previous">
-    <span aria-hidden="true">&lt;</span>
-  </a>
-  <div class="page-item disabled">
+  <%# CheckBox %>
+  <div class="form-check mb-4 ms-2">
+    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+  </div>
+
+  <%# file upload %>
+  <div class="custom-file d-flex justify-content-center mb-4 ms-2">
+    <div class="d-flex w-100 justify-content-center">
+      <div class="d-flex col-4 justify-content-end">
+      <%= show_svg("download-icon", class: "img-file my-auto") %>
+      </div>
+      <span class="ms-3 my-auto file-content font-weight-normal text-truncate col-8 pe-4">
+        Choisir un fichier
+      </span>
+    </div>
+    <div class="input-container">
+      <input
+        required="required"
+        id="project_owner_identity_proofs_file_front"
+        class="form-control-file custom-file-input"
+        type="file"
+        name="profile[identity_proofs_attributes][0][file_front]"
+      >
+    </div>
+  </div>
+
+  <%# pagination %>
+  <div class="mb-4 ms-2">
+    <ul class="pagination pagination-sm">
+      <li class="page-item active" aria-current="page">
+        <a class="page-link">1</a>
+      </li>
+      <li class="page-item">
+        <a class="page-link" href="#">2</a>
+      </li>
+      <li class="page-item">
+        <a class="page-link" href="#">3</a>
+      </li>
+    </ul>
     <a class="page-link mb-2" href="#" aria-label="Previous">
       <span aria-hidden="true">&lt;</span>
     </a>
-  </div>
-  <a class="page-link mb-2" href="#" aria-label="Next">
-    <span aria-hidden="true">&gt;</span>
-  </a>
-  <div class="page-item disabled">
+    <div class="page-item disabled">
+      <a class="page-link mb-2" href="#" aria-label="Previous">
+        <span aria-hidden="true">&lt;</span>
+      </a>
+    </div>
     <a class="page-link mb-2" href="#" aria-label="Next">
       <span aria-hidden="true">&gt;</span>
     </a>
+    <div class="page-item disabled">
+      <a class="page-link mb-2" href="#" aria-label="Next">
+        <span aria-hidden="true">&gt;</span>
+      </a>
+    </div>
   </div>
-</div>
 
-<%# Cards %>
-<div class='card shadow-lg ms-2 mb-4'>
-  <%= image_tag("card-img-top.jpg", class: "card-img-top shadow-lg") %>
-  <div class="card-body shadow-lg mt-n5 p-4 bg-white">
-    <h5 class="card-title mb-4 fs-2 fw-normal text-dark">Titre d'un projet</h5>
-    <p class="card-text mb-4 fs-6 fw-light text-dark">
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-      Dictum ullamcorper vel dolor tellus varius.
-      Venenatis blandit diam mauris mauris urna duis.
-    </p>
-    <div class="progress-container mb-5">
-      <p>Montant de la collecte: <span>1M €</span></p>
-      <div class="progress">
-        <div class="progress-bar"
-             role="progressbar"
-             style="width: 75%;"
-             aria-valuenow="75"
-             aria-valuemin="0"
-             aria-valuemax="100">
-          <small>75%</small>
+  <%# Cards %>
+  <div class='card shadow-lg ms-2 mb-4'>
+    <%= image_tag("card-img-top.jpg", class: "card-img-top shadow-lg") %>
+    <div class="card-body shadow-lg mt-n5 p-4 bg-white">
+      <h5 class="card-title mb-4 fs-2 fw-normal text-dark">Titre d'un projet</h5>
+      <p class="card-text mb-4 fs-6 fw-light text-dark">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        Dictum ullamcorper vel dolor tellus varius.
+        Venenatis blandit diam mauris mauris urna duis.
+      </p>
+      <div class="progress-container mb-5">
+        <p>Montant de la collecte: <span>1M €</span></p>
+        <div class="progress">
+          <div class="progress-bar"
+              role="progressbar"
+              style="width: 75%;"
+              aria-valuenow="75"
+              aria-valuemin="0"
+              aria-valuemax="100">
+            <small>75%</small>
+          </div>
         </div>
       </div>
+      <div class="d-flex justify-content-around">
+        <section class="d-flex flex-column">
+          <small class="text-muted fw-light">Secteur d'activité</small>
+          <small class="text-muted fw-bold">Foodtech</small>
+        </section>
+        <div class="border border-1"></div>
+        <section class="d-flex flex-column">
+          <small class="text-muted fw-light">C.A  des 12 derniers mois</small>
+          <small class="text-muted fw-bold">1 000 000 €</small>
+        </section>
+      </div>
     </div>
-    <div class="d-flex justify-content-around">
-      <section class="d-flex flex-column">
-        <small class="text-muted fw-light">Secteur d'activité</small>
-        <small class="text-muted fw-bold">Foodtech</small>
-      </section>
-      <div class="border border-1"></div>
-      <section class="d-flex flex-column">
-        <small class="text-muted fw-light">C.A  des 12 derniers mois</small>
-        <small class="text-muted fw-bold">1 000 000 €</small>
-      </section>
+    <div class="card-footer d-flex justify-content-center p-3 shadow-lg">
+      <%= show_svg("check", class: "me-2") %>
+      <span>Financé</span>
     </div>
   </div>
-  <div class="card-footer d-flex justify-content-center p-3 shadow-lg">
-    <%= show_svg("check", class: "me-2") %>
-    <span>Financé</span>
-  </div>
-</div>
+</section>
