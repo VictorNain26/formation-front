@@ -3,7 +3,7 @@
     <div class="container-fluid justify-content-between">
       <div class="navbar-brand d-flex justify-content-center col col-lg-2 m-0">
         <%= link_to root_path do %>
-          <%= show_svg("logo", width: "100%", alt: "Soul Invest logo") %>
+          <%= svg_tag("logo", width: "100%", alt: "Soul Invest logo") %>
         <% end %>
       </div>
       <button
@@ -17,7 +17,7 @@
       >
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse justify-content-end col me-5" id="navbarToggler">
+      <div class="collapse navbar-collapse justify-content-end container me-5" id="navbarToggler">
         <%= render 'partials/navbar/navs' %>
         <%= render 'partials/navbar/mobile_navs' %>
       </div>
