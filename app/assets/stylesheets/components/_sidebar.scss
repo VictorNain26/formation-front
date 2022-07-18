@@ -1,7 +1,8 @@
-li {
-  &:first-child {
-    svg path {
-      stroke: $secondary;
-    }
-  }
+.sidebar {
+  min-width: 291.88px;
+  height: calc(100vh - 119px);
+}
+
+.active path {
+  stroke: $secondary;
 }

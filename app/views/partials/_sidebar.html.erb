@@ -1,51 +1,51 @@
-<ul class="sidebar nav nav-pills flex-column col-2 shadow d-none d-lg-flex">
+<ul class="sidebar nav nav-pills flex-column shadow d-none d-lg-flex">
   <li class="nav-item border-bottom border-secondary border-5 w-100">
-    <a href="#" class="nav-link link-dark fw-normal my-3 ps-4 d-flex flex-lg-column flex-xl-row align-items-center justify-content-center" aria-current="page">
-      <%= show_svg('icon-tdb', class: "col-3 mb-lg-2 mb-xl-0") %>
+    <a href="#" class="nav-link link-dark fw-normal my-3 ps-4 d-flex align-items-center justify-content-center" aria-current="page">
+      <%= svg_tag('icon-tdb', class: "col-3 mb-lg-2 mb-xl-0 active") %>
       <span class="col">Tableau de bord</span>
     </a>
   </li>
   <li>
-    <a href="#" class="nav-link link-dark fw-light my-3 ps-4 d-flex flex-lg-column flex-xl-row align-items-center justify-content-center">
-      <%= show_svg('icon', class: "col-3 mb-lg-2 mb-xl-0") %>
+    <a href="#" class="nav-link link-dark fw-light my-3 ps-4 d-flex align-items-center justify-content-center">
+      <%= svg_tag('icon', class: "col-3 mb-lg-2 mb-xl-0") %>
       <span class="col">Profil</span>
     </a>
   </li>
   <li class="w-100">
-    <a href="#" class="nav-link link-dark fw-light my-3 ps-4 d-flex flex-lg-column flex-xl-row align-items-center justify-content-center">
-      <%= show_svg('icon-docs', class: "col-3 mb-lg-2 mb-xl-0") %>
+    <a href="#" class="nav-link link-dark fw-light my-3 ps-4 d-flex align-items-center justify-content-center">
+      <%= svg_tag('icon-docs', class: "col-3 mb-lg-2 mb-xl-0") %>
       <span class="col">Pièces justificatives</span>
     </a>
   </li>
   <li class="w-100">
-    <a href="#" class="nav-link link-dark fw-light my-3 ps-4 d-flex flex-lg-column flex-xl-row align-items-center justify-content-center">
-      <%= show_svg("icon-eligibilty", class: "col-3 mb-lg-2 mb-xl-0") %>
+    <a href="#" class="nav-link link-dark fw-light my-3 ps-4 d-flex align-items-center justify-content-center">
+      <%= svg_tag("icon-eligibilty", class: "col-3 mb-lg-2 mb-xl-0") %>
       <span class="col">Eligibilité</span>
     </a>
   </li>
   <li class="w-100">
-    <a href="#" class="nav-link link-dark fw-light my-3 ps-4 d-flex flex-lg-column flex-xl-row align-items-center justify-content-center">
-      <%= show_svg("icon-investissements", class: "col-3 mb-lg-2 mb-xl-0") %>
+    <a href="#" class="nav-link link-dark fw-light my-3 ps-4 d-flex align-items-center justify-content-center">
+      <%= svg_tag("icon-investissements", class: "col-3 mb-lg-2 mb-xl-0") %>
       <span class="col">Investissements</span>
     </a>
   </li>
   <li class="w-100">
-    <a href="#" class="nav-link link-dark fw-light my-3 ps-4 d-flex flex-lg-column flex-xl-row align-items-center justify-content-center">
-      <%= show_svg("icon-wallet", class: "col-3 mb-lg-2 mb-xl-0") %>
+    <a href="#" class="nav-link link-dark fw-light my-3 ps-4 d-flex align-items-center justify-content-center">
+      <%= svg_tag("icon-wallet", class: "col-3 mb-lg-2 mb-xl-0") %>
       <span class="col">Porte-monnaie</span>
     </a>
   </li>
   <li class="w-100">
-    <a href="#" class="nav-link link-dark fw-light my-3 ps-4 d-flex flex-lg-column flex-xl-row align-items-center justify-content-center">
-      <%= show_svg("icon-actualite", class: "col-3 mb-lg-2 mb-xl-0") %>
+    <a href="#" class="nav-link link-dark fw-light my-3 ps-4 d-flex align-items-center justify-content-center">
+      <%= svg_tag("icon-actualite", class: "col-3 mb-lg-2 mb-xl-0") %>
       <span class="col">Actualités</span>
     </a>
   </li>
-  <li class="w-100">
+  <li class="w-100 mt-auto">
     <%= link_to destroy_user_session_path,
         method: :delete,
-        class: "nav-link link-dark fw-light my-3 ps-4 d-flex flex-lg-column flex-xl-row align-items-center justify-content-center" do %>
-      <%= show_svg("icon-logout", class: "col-3 mb-lg-2 mb-xl-0") %>
+        class: "nav-link link-dark fw-light my-3 ps-4 d-flex align-items-center justify-content-center" do %>
+      <%= svg_tag("icon-logout", class: "col-3 mb-lg-2 mb-xl-0") %>
       <span class="col">Déconnexion</span>
     <% end %>
   </li>
