@@ -130,3 +130,7 @@
     <span>Financé</span>
   </div>
 </div>
+
+<% content_for(:javascript) do %>
+  <%= javascript_include_tag 'InputFile.js' %>
+<% end %>
