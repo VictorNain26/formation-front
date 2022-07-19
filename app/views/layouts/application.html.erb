@@ -11,5 +11,6 @@
   <body>
     <%= yield %>
     <%= yield(:javascript) if content_for?(:javascript) %>
+    <%= javascript_include_tag 'inlineSvg.js', type: 'module' %>
   </body>
 </html>
