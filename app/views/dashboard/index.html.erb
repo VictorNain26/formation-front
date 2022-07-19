@@ -100,43 +100,4 @@
   </div>
 </section>
 <h1 class="text-primary mb-5 mt-5">Dernières souscriptions <span class="text-secondary">crées</span></h1>
-<section class="table-responsive mb-5">
-  <table class="table table-striped table-borderless">
-    <thead>
-      <tr>
-        <th>Projet</th>
-        <th class="text-center">Investisseurs</th>
-        <th class="text-center">Montant</th>
-        <th class="text-center">Date d'émission</th>
-        <th class="text-center">Payée ?</th>
-        <th class="text-center">Signée ?</th>
-      </tr>
-    </thead>
-    <tbody class="border">
-      <tr class="border">
-        <td>Mark</td>
-        <th>Koko Mayo</th>
-        <td class="text-center border">15,00 €</td>
-        <td class="text-center border">04/12/2022</td>
-        <td class="text-center border"><%= svg_tag("check", width: "25px")%></td>
-        <td class="text-center border"><%= svg_tag("check", width: "25px")%></td>
-      </tr>
-      <tr class="border">
-        <td>Jacob</td>
-        <th>Koko Mayo</th>
-        <td class="text-center border">25,00 €</td>
-        <td class="text-center border">04/12/2022</td>
-        <td class="text-center border"><%= svg_tag("check", width: "25px")%></td>
-        <td class="text-center border"><%= svg_tag("check", width: "25px")%></td>
-      </tr>
-      <tr>
-        <td>Larry</td>
-        <th>Koko Mayo</th>
-        <td class="text-center border">25,00 €</td>
-        <td class="text-center border">04/12/2022</td>
-        <td class="text-center border"><%= svg_tag("check", width: "25px")%></td>
-        <td class="text-center border"><%= svg_tag("check", width: "25px")%></td>
-      </tr>
-    </tbody>
-  </table>
-</section>
+<%= render 'partials/dashboard/table' %>
