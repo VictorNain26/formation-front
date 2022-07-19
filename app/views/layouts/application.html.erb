@@ -7,13 +7,16 @@
     <%= csp_meta_tag %>
 
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
-    <%= javascript_importmap_tags %>
   </head>
   <body>
-    <%= render "partials/navbar"%>
-    <%= render "partials/sidebar"%>
-    <main class="mt-5 d-flex justify-content-center">
-      <%= yield %>
+    <%= render "partials/navbar" %>
+    <main class="d-flex">
+      <%= render "partials/sidebar" %>
+      <section class="mt-5 d-flex flex-column container">
+        <%= yield %>
+      </section>
     </main>
+    <%= yield(:javascript) if content_for?(:javascript) %>
+    <%= javascript_include_tag 'inlineSvg.js', type: 'module' %>
   </body>
 </html>
