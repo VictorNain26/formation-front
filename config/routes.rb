@@ -5,6 +5,7 @@ Rails.application.routes.draw do
   end
 
   resources :dashboard, only: :index
+  resources :profiles, only: :index
 
   root 'homes#index'
 end

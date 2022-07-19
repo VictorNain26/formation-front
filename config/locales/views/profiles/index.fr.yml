@@ -1,0 +1,8 @@
+fr:
+  profiles:
+    index:
+      profile_title: Mon profil
+      personal_information: Informations personnelles
+      validate_edit_profile: Valider
+      form:
+        first_name: prenom
