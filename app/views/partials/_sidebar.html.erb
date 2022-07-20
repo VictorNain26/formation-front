@@ -2,43 +2,43 @@
   <li class="nav-item border-bottom border-secondary border-5 w-100">
     <a href="#" class="nav-link link-dark fw-normal my-3 ps-4 d-flex align-items-center justify-content-center" aria-current="page">
       <%= svg_tag('icon-tdb', class: "col-3 mb-lg-2 mb-xl-0 active") %>
-      <span class="col">Tableau de bord</span>
+      <span class="col"><%= t(".dashboard") %></span>
     </a>
   </li>
   <li>
     <a href="#" class="nav-link link-dark fw-light my-3 ps-4 d-flex align-items-center justify-content-center">
       <%= svg_tag('icon', class: "col-3 mb-lg-2 mb-xl-0") %>
-      <span class="col">Profil</span>
+      <span class="col"><%= t(".profile") %></span>
     </a>
   </li>
   <li class="w-100">
     <a href="#" class="nav-link link-dark fw-light my-3 ps-4 d-flex align-items-center justify-content-center">
       <%= svg_tag('icon-docs', class: "col-3 mb-lg-2 mb-xl-0") %>
-      <span class="col">Pièces justificatives</span>
+      <span class="col"><%= t(".supporting_documents") %></span>
     </a>
   </li>
   <li class="w-100">
     <a href="#" class="nav-link link-dark fw-light my-3 ps-4 d-flex align-items-center justify-content-center">
       <%= svg_tag("icon-eligibilty", class: "col-3 mb-lg-2 mb-xl-0") %>
-      <span class="col">Eligibilité</span>
+      <span class="col"><%= t(".eligibility") %></span>
     </a>
   </li>
   <li class="w-100">
     <a href="#" class="nav-link link-dark fw-light my-3 ps-4 d-flex align-items-center justify-content-center">
       <%= svg_tag("icon-investissements", class: "col-3 mb-lg-2 mb-xl-0") %>
-      <span class="col">Investissements</span>
+      <span class="col"><%= t(".investments") %></span>
     </a>
   </li>
   <li class="w-100">
     <a href="#" class="nav-link link-dark fw-light my-3 ps-4 d-flex align-items-center justify-content-center">
       <%= svg_tag("icon-wallet", class: "col-3 mb-lg-2 mb-xl-0") %>
-      <span class="col">Porte-monnaie</span>
+      <span class="col"><%= t(".wallet") %></span>
     </a>
   </li>
   <li class="w-100">
     <a href="#" class="nav-link link-dark fw-light my-3 ps-4 d-flex align-items-center justify-content-center">
       <%= svg_tag("icon-actualite", class: "col-3 mb-lg-2 mb-xl-0") %>
-      <span class="col">Actualités</span>
+      <span class="col"><%= t(".news") %></span>
     </a>
   </li>
   <li class="w-100 mt-auto">
@@ -46,7 +46,7 @@
         method: :delete,
         class: "nav-link link-dark fw-light my-3 ps-4 d-flex align-items-center justify-content-center" do %>
       <%= svg_tag("icon-logout", class: "col-3 mb-lg-2 mb-xl-0") %>
-      <span class="col">Déconnexion</span>
+      <span class="col"><%= t(".disconnect") %></span>
     <% end %>
   </li>
 </ul>
