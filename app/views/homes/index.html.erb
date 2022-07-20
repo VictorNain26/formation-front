@@ -42,21 +42,20 @@
 <div class="custom-file d-flex justify-content-center mb-4 ms-2">
   <div class="d-flex w-100 justify-content-center">
     <div class="d-flex col-4 justify-content-end">
-      <%= svg_tag("download-icon", class: "img-file my-auto") %>
-      </div>
-      <span class="ms-3 my-auto file-content font-weight-normal text-truncate col-8 pe-4">
-        <%= t(".input.choose_file") %>
-      </span>
+    <%= image_tag("download-icon", class: "img-file my-auto svg", width: "45%") %>
     </div>
-    <div class="input-container">
-      <input
-        required="required"
-        id="project_owner_identity_proofs_file_front"
-        class="form-control-file custom-file-input"
-        type="file"
-        name="profile[identity_proofs_attributes][0][file_front]"
-      >
-    </div>
+    <span class="ms-3 my-auto file-content font-weight-normal text-truncate col-8 pe-4">
+      <%= t(".input.choose_file") %>
+    </span>
+  </div>
+  <div class="input-container">
+    <input
+      required="required"
+      id="project_owner_identity_proofs_file_front"
+      class="form-control-file custom-file-input"
+      type="file"
+      name="profile[identity_proofs_attributes][0][file_front]"
+    >
   </div>
 </div>
 
@@ -132,6 +131,6 @@
   </div>
 </div>
 
-<% content_for(:javascript) do %>
-  <%= javascript_include_tag 'inputFile.js' %>
+<% content_for :javascript do %>
+  <%= javascript_import_module_tag "inputFile" %>
 <% end %>
