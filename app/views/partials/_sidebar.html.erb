@@ -2,44 +2,44 @@
   <li class="nav-item border-bottom border-secondary border-5 w-100">
     <%= link_to dashboard_index_path,
         class: "nav-link link-dark fw-normal my-3 ps-4 d-flex align-items-center justify-content-center" do %>
-      <%= svg_tag("icon-tdb", class: "col-3 mb-lg-2 mb-xl-0 #{ params[:controller] == "dashboard" ? "active" : ""}") %>
+      <%= image_tag("icon-tdb", class: "col-3 mb-lg-2 mb-xl-0 #{ params[:controller] == "dashboard" ? "active" : ""} svg", width: "2rem") %>
       <span class="col">Tableau de bord</span>
     <% end %>
   </li>
   <li>
     <%= link_to "#",
         class: "nav-link link-dark fw-normal my-3 ps-4 d-flex align-items-center justify-content-center" do %>
-      <%= svg_tag("icon", class: "col-3 mb-lg-2 mb-xl-0 #{ params[:controller] == "profiles" ? "active" : ""}") %>
+      <%= image_tag("icon", class: "col-3 mb-lg-2 mb-xl-0 #{ params[:controller] == "profiles" ? "active" : ""} svg", width: "2rem") %>
       <span class="col">Profil</span>
     <% end %>
   </li>
   <li class="w-100">
     <a href="#" class="nav-link link-dark fw-light my-3 ps-4 d-flex align-items-center justify-content-center">
-      <%= svg_tag('icon-docs', class: "col-3 mb-lg-2 mb-xl-0") %>
+      <%= image_tag('icon-docs', class: "col-3 mb-lg-2 mb-xl-0 svg", width: "2rem") %>
       <span class="col">Pièces justificatives</span>
     </a>
   </li>
   <li class="w-100">
     <a href="#" class="nav-link link-dark fw-light my-3 ps-4 d-flex align-items-center justify-content-center">
-      <%= svg_tag("icon-eligibilty", class: "col-3 mb-lg-2 mb-xl-0") %>
+      <%= image_tag("icon-eligibilty", class: "col-3 mb-lg-2 mb-xl-0 svg", width: "2rem") %>
       <span class="col">Eligibilité</span>
     </a>
   </li>
   <li class="w-100">
     <a href="#" class="nav-link link-dark fw-light my-3 ps-4 d-flex align-items-center justify-content-center">
-      <%= svg_tag("icon-investissements", class: "col-3 mb-lg-2 mb-xl-0") %>
+      <%= image_tag("icon-investissements", class: "col-3 mb-lg-2 mb-xl-0 svg", width: "2rem") %>
       <span class="col">Investissements</span>
     </a>
   </li>
   <li class="w-100">
     <a href="#" class="nav-link link-dark fw-light my-3 ps-4 d-flex align-items-center justify-content-center">
-      <%= svg_tag("icon-wallet", class: "col-3 mb-lg-2 mb-xl-0") %>
+      <%= image_tag("icon-wallet", class: "col-3 mb-lg-2 mb-xl-0 svg", width: "2rem") %>
       <span class="col">Porte-monnaie</span>
     </a>
   </li>
   <li class="w-100">
     <a href="#" class="nav-link link-dark fw-light my-3 ps-4 d-flex align-items-center justify-content-center">
-      <%= svg_tag("icon-actualite", class: "col-3 mb-lg-2 mb-xl-0") %>
+      <%= image_tag("icon-actualite", class: "col-3 mb-lg-2 mb-xl-0 svg", width: "2rem") %>
       <span class="col">Actualités</span>
     </a>
   </li>
@@ -47,7 +47,7 @@
     <%= link_to destroy_user_session_path,
         method: :delete,
         class: "nav-link link-dark fw-light my-3 ps-4 d-flex align-items-center justify-content-center" do %>
-      <%= svg_tag("icon-logout", class: "col-3 mb-lg-2 mb-xl-0") %>
+      <%= image_tag("icon-logout", class: "col-3 mb-lg-2 mb-xl-0 svg", width: "2rem") %>
       <span class="col">Déconnexion</span>
     <% end %>
   </li>
