@@ -1,0 +1,12 @@
+fr:
+  partials:
+    sidebar:
+      mobile_sidebar:
+        dashboard: Tableau de bord
+        profile: Profil
+        supporting_documents: Pièces justificatives
+        eligibility: Eligibilité
+        investments: Investissements
+        wallet: Porte-monnaie
+        news: Actualités
+        disconnect: Déconnexion

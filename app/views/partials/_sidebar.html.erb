@@ -3,44 +3,44 @@
     <%= link_to dashboard_index_path,
         class: "nav-link link-dark fw-normal my-3 ps-4 d-flex align-items-center justify-content-center" do %>
       <%= image_tag("icon-tdb", class: "col-3 mb-lg-2 mb-xl-0 #{ params[:controller] == "dashboard" ? "active" : ""} svg", width: "2rem") %>
-      <span class="col">Tableau de bord</span>
+      <span class="col"><%= t(".dashboard") %></span>
     <% end %>
   </li>
   <li>
     <%= link_to "#",
         class: "nav-link link-dark fw-normal my-3 ps-4 d-flex align-items-center justify-content-center" do %>
       <%= image_tag("icon", class: "col-3 mb-lg-2 mb-xl-0 #{ params[:controller] == "profiles" ? "active" : ""} svg", width: "2rem") %>
-      <span class="col">Profil</span>
+      <span class="col"><%= t(".profile") %></span>
     <% end %>
   </li>
   <li class="w-100">
     <a href="#" class="nav-link link-dark fw-light my-3 ps-4 d-flex align-items-center justify-content-center">
       <%= image_tag('icon-docs', class: "col-3 mb-lg-2 mb-xl-0 svg", width: "2rem") %>
-      <span class="col">Pièces justificatives</span>
+      <span class="col"><%= t(".supporting_documents") %></span>
     </a>
   </li>
   <li class="w-100">
     <a href="#" class="nav-link link-dark fw-light my-3 ps-4 d-flex align-items-center justify-content-center">
       <%= image_tag("icon-eligibilty", class: "col-3 mb-lg-2 mb-xl-0 svg", width: "2rem") %>
-      <span class="col">Eligibilité</span>
+      <span class="col"><%= t(".eligibility") %></span>
     </a>
   </li>
   <li class="w-100">
     <a href="#" class="nav-link link-dark fw-light my-3 ps-4 d-flex align-items-center justify-content-center">
       <%= image_tag("icon-investissements", class: "col-3 mb-lg-2 mb-xl-0 svg", width: "2rem") %>
-      <span class="col">Investissements</span>
+      <span class="col"><%= t(".investments") %></span>
     </a>
   </li>
   <li class="w-100">
     <a href="#" class="nav-link link-dark fw-light my-3 ps-4 d-flex align-items-center justify-content-center">
       <%= image_tag("icon-wallet", class: "col-3 mb-lg-2 mb-xl-0 svg", width: "2rem") %>
-      <span class="col">Porte-monnaie</span>
+      <span class="col"><%= t(".wallet") %></span>
     </a>
   </li>
   <li class="w-100">
     <a href="#" class="nav-link link-dark fw-light my-3 ps-4 d-flex align-items-center justify-content-center">
       <%= image_tag("icon-actualite", class: "col-3 mb-lg-2 mb-xl-0 svg", width: "2rem") %>
-      <span class="col">Actualités</span>
+      <span class="col"><%= t(".news") %></span>
     </a>
   </li>
   <li class="w-100 mt-auto">
@@ -48,7 +48,7 @@
         method: :delete,
         class: "nav-link link-dark fw-light my-3 ps-4 d-flex align-items-center justify-content-center" do %>
       <%= image_tag("icon-logout", class: "col-3 mb-lg-2 mb-xl-0 svg", width: "2rem") %>
-      <span class="col">Déconnexion</span>
+      <span class="col"><%= t(".disconnect") %></span>
     <% end %>
   </li>
 </ul>

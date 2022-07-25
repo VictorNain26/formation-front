@@ -131,6 +131,6 @@
   </div>
 </div>
 
-<% content_for :javascript do %>
-  <%= javascript_import_module_tag "inputFile" %>
+<% content_for(:javascript) do %>
+  <%= javascript_include_tag "inputFile", defer: true %>
 <% end %>
