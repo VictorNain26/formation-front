@@ -1,0 +1,43 @@
+<ul class="navbar-nav col d-none d-lg-flex justify-content-end align-items-center me-5 container">
+  <li class="nav-item">
+    <a href="/" class="nav-link fs-5 fw-normal text-dark mx-5">Investir</a>
+  </li>
+  <% if user_signed_in? %>
+    <li class="nav-item d-flex mx-5">
+      <span class="fs-5 fw-normal text-dark">Solde du compte:</span>
+      <span class="fs-5 fw-bold text-dark ms-2">1 000€</span>
+    </li>
+    <li class="nav-item dropdown ms-5">
+      <a
+        href="#"
+        class="nav-link dropdown-toggle fs-5 fw-normal text-dark"
+        id="navbarDropdownMenuLink"
+        role="button" data-bs-toggle="dropdown" aria-expanded="false"
+      >
+        <%= current_user.full_name %>
+      </a>
+      <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+        <li>
+          <a href="#" class="dropdown-item fs-5 fw-light text-dark">
+            Personne Physique
+          </a>
+        </li>
+        <li>
+          <a href="#" class="dropdown-item fs-5 fw-light text-dark">
+            + Ajouter un profil entreprise
+          </a>
+        </li>
+      </ul>
+    </li>
+  <% else %>
+    <li class="nav-item">
+      <%= link_to "S'inscrire",
+          new_user_registration_path,
+          class: "btn btn-outline-secondary ms-5 me-4"
+      %>
+    </li>
+    <li class="nav-item">
+      <%= link_to "Se connecter", new_user_session_path, class: "btn btn-primary" %>
+    </li>
+  <% end %>
+</ul>
