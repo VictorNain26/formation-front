@@ -1,7 +1,7 @@
 fr:
-  partials:
-    sidebar:
-      mobile_sidebar:
+  views:
+    partials:
+      sidebar:
         dashboard: Tableau de bord
         profile: Profil
         supporting_documents: Pièces justificatives

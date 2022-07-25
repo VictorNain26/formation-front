@@ -1,15 +1,15 @@
-<h1 class="text-primary">Tableau de bord</h1>
+<h1 class="text-primary"><%= t(".dashboard") %></h1>
 <section class="d-flex flex-row my-5 justify-content-center justify-content-md-between flex-wrap">
   <div class="card-info d-flex align-items-center justify-content-center rounded-pill shadow mb-3 py-2">
     <div class="d-flex flex-column align-items-center py-3">
       <span class="text-secondary fs-2">4</span>
-      <p class="fw-light m-0">Nombres d'investisseurs</p>
+      <p class="fw-light m-0"><%= t(".number_of_investors") %></p>
     </div>
   </div>
   <div class="card-info d-flex align-items-center justify-content-center rounded-pill shadow mb-3 py-2">
     <div class="d-flex flex-column align-items-center py-3">
       <span class="text-secondary fs-2">3 980 €</span>
-      <p class="fw-light m-0">Montant totaux investis</p>
+      <p class="fw-light m-0"><%= t(".total_amount_invested") %></p>
     </div>
   </div>
   <div class="card-info d-flex align-items-center justify-content-center rounded-pill shadow mb-3 py-2">
@@ -18,86 +18,10 @@
     </div>
   </div>
 </section>
-<h1 class="text-primary mb-5">Projet en cours <span class="text-secondary">et à venir</span></h1>
+<%= raw t(".current_and_future_projects") %>
 <section class="d-flex justify-content-center justify-content-xl-between mb-3 flex-wrap">
-  <div class="card shadow-lg mb-3">
-  <%= image_tag("card-img-top.jpg", class: "card-img-top shadow-lg") %>
-    <div class="card-body shadow-lg mt-n5 p-4 bg-white">
-      <h5 class="card-title mb-4 fs-2 fw-normal text-dark">Titre d'un projet</h5>
-      <p class="card-text mb-4 fs-6 fw-light text-dark">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-        Dictum ullamcorper vel dolor tellus varius.
-        Venenatis blandit diam mauris mauris urna duis.
-      </p>
-      <div class="progress-container mb-5">
-        <p>Montant de la collecte: <span>1M €</span></p>
-        <div class="progress">
-          <div class="progress-bar"
-              role="progressbar"
-              style="width: 25%;"
-              aria-valuenow="25"
-              aria-valuemin="0"
-              aria-valuemax="100">
-            <small>25%</small>
-          </div>
-        </div>
-      </div>
-      <div class="d-flex justify-content-around">
-        <section class="d-flex flex-column">
-          <small class="text-muted fw-light">Secteur d'activité</small>
-          <small class="text-muted fw-bold">Foodtech</small>
-        </section>
-        <div class="border border-1"></div>
-        <section class="d-flex flex-column">
-          <small class="text-muted fw-light">C.A  des 12 derniers mois</small>
-          <small class="text-muted fw-bold">1 000 000 €</small>
-        </section>
-      </div>
-    </div>
-    <div class="card-footer d-flex justify-content-center p-3 shadow">
-      <%= image_tag("check", class: "me-2 svg", width: "1.875rem") %>
-      <span>Financé</span>
-    </div>
-  </div>
-  <div class="card shadow-lg mb-3">
-  <%= image_tag("card-img-top.jpg", class: "card-img-top shadow-lg") %>
-    <div class="card-body shadow-lg mt-n5 p-4 bg-white">
-      <h5 class="card-title mb-4 fs-2 fw-normal text-dark">Titre d'un projet</h5>
-      <p class="card-text mb-4 fs-6 fw-light text-dark">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-        Dictum ullamcorper vel dolor tellus varius.
-        Venenatis blandit diam mauris mauris urna duis.
-      </p>
-      <div class="progress-container mb-5">
-        <p>Montant de la collecte: <span>1M €</span></p>
-        <div class="progress">
-          <div class="progress-bar"
-              role="progressbar"
-              style="width: 100%;"
-              aria-valuenow="100"
-              aria-valuemin="0"
-              aria-valuemax="100">
-            <small>100%</small>
-          </div>
-        </div>
-      </div>
-      <div class="d-flex justify-content-around">
-        <section class="d-flex flex-column">
-          <small class="text-muted fw-light">Secteur d'activité</small>
-          <small class="text-muted fw-bold">Foodtech</small>
-        </section>
-        <div class="border border-1"></div>
-        <section class="d-flex flex-column">
-          <small class="text-muted fw-light">C.A  des 12 derniers mois</small>
-          <small class="text-muted fw-bold">1 000 000 €</small>
-        </section>
-      </div>
-    </div>
-    <div class="card-footer d-flex justify-content-center p-3 shadow">
-      <%= image_tag("check", class: "me-2 svg", width: "1.875rem") %>
-      <span>Financé</span>
-    </div>
-  </div>
+  <%= render 'partials/components/project_card' %>
+  <%= render 'partials/components/project_card' %>
 </section>
-<h1 class="text-primary mb-5 mt-5">Dernières souscriptions <span class="text-secondary">crées</span></h1>
+<%= raw t(".last_subscriptions_created") %>
 <%= render 'partials/dashboard/table' %>

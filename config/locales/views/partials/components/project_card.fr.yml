@@ -1,0 +1,8 @@
+fr:
+  partials:
+    components:
+      project_card:
+        amount_collected: Montant de la collecte
+        sector_of_activity: Secteur d'activité
+        sales_of_the_last_twelve_months: C.A des 12 derniers mois
+        funded: Financé

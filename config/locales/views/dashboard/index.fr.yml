@@ -1,0 +1,12 @@
+fr:
+  dashboard:
+    index:
+      dashboard: Tableau de bord
+      number_of_investors: Nombres d'investisseurs
+      total_amount_invested: Montant totaux investis
+      current_and_future_projects: <h1 class="text-primary mb-5">
+                                   Projet en cours <span class="text-secondary">et à venir</span>
+                                   </h1>
+      last_subscriptions_created: <h1 class="text-primary mb-5 mt-5">
+                                  Dernières souscriptions <span class="text-secondary">crées</span>
+                                  </h1>
