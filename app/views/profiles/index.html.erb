@@ -17,22 +17,22 @@
       </div>
 
       <div class="col-lg-4 mb-4">
-        <div class="position-relative">
-          <%= f.phone_field :phone_number, class: "form-control phone-number-input", required: true %>
+        <div class="form-floating">
+          <%= f.phone_field :phone_number, class: "form-control phone-number-input", placeholder: :phone_number, required: true %>
           <%= f.label :phone_number, class: "iti-label start-0" %>
         </div>
       </div>
 
-      <div class="col-lg-6 mb-4">
+      <div class="col-lg-6 mb-4 mt-1">
         <div class="form-floating">
-          <%= f.email_field :email, class: "form-control bg-white text-muted", placeholder: :email_field, disabled: true %>
+          <%= f.email_field :email, class: "form-control", placeholder: :email_field %>
           <%= f.label :email %>
         </div>
       </div>
 
-      <div class="col-lg-6 mb-4">
+      <div class="col-lg-6 mb-4 mt-1">
         <div class="form-floating">
-          <%= f.select(:civility, {class: "form-select", required: true}) %>
+          <%= f.select(:civility, ["Madame", "Monsieur"], {}, { class: "form-select select", placeholder: :civility, required: true }) %>
           <%= f.label :civility %>
         </div>
       </div>
@@ -44,13 +44,14 @@
         </div>
       </div>
 
-      <div class="col-lg-6 mb-4">
+      <div class="col-lg-6 mb-4 mt-1">
         <div class="form-floating">
-          <%= country_select("user", "country", priority_countries: ["GB", "FR", "DE"])%>
+          <%= country_select("user", "country", {}, { class: "form-select select", placeholder: :nationality, required: true })%>
           <%= f.label :nationality %>
         </div>
       </div>
     </div>
+
   <div class="actions mt-5">
     <%= f.submit t(".validate_edit_profile"), class: "btn btn-primary" %>
   </div>
