@@ -6,7 +6,9 @@
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
-    <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+    <%= stylesheet_link_tag "application" %>
+    <%= javascript_include_tag "application", "data-turbo-track": "reload", defer: true %>
+    <%= yield(:javascript) %>
   </head>
   <body>
     <%= render "partials/navbar" %>
@@ -16,7 +18,5 @@
         <%= yield %>
       </section>
     </main>
-    <%= yield(:javascript) if content_for?(:javascript) %>
-    <%= javascript_include_tag 'inlineSvg.js', type: 'module' %>
   </body>
 </html>

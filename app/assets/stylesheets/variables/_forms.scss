@@ -1,7 +1,7 @@
 $input-border-radius: 3.125rem;
 $input-border-color: $secondary ;
 $input-border-width: 2px;
-$input-focus-box-shadow: none;
+$input-focus-box-shadow: unset;
 $input-focus-border-color: $primary;
 
 $form-floating-input-padding-t: 0;
@@ -12,7 +12,7 @@ $form-floating-transition: background-color .2s ease, opacity .1s ease-in-out, t
 
 $form-check-input-border-radius: 40%;
 $form-check-input-border: 2px solid $primary;
-$form-check-input-focus-box-shadow: none;
+$form-check-input-focus-box-shadow: unset;
 $form-check-input-checked-color: $primary;
 $form-check-input-checked-bg-color: $white;
 $form-check-input-checked-border-color: $primary;

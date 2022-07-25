@@ -1,142 +1,27 @@
-<h1 class="text-primary">Tableau de bord</h1>
-<div class="d-flex flex-row mt-5 mb-5 justify-content-between flex-wrap">
-  <section class="card-info d-flex align-items-center justify-content-center rounded-pill shadow mb-3">
+<h1 class="text-primary"><%= t(".dashboard") %></h1>
+<section class="d-flex flex-row my-5 justify-content-center justify-content-md-between flex-wrap">
+  <div class="card-info d-flex align-items-center justify-content-center rounded-pill shadow mb-3 py-2">
     <div class="d-flex flex-column align-items-center py-3">
       <span class="text-secondary fs-2">4</span>
-      <p class="fw-light m-0">Nombres d'investisseurs</p>
+      <p class="fw-light m-0"><%= t(".number_of_investors") %></p>
     </div>
-  </section>
-  <section class="card-info d-flex align-items-center justify-content-center rounded-pill shadow mb-3">
+  </div>
+  <div class="card-info d-flex align-items-center justify-content-center rounded-pill shadow mb-3 py-2">
     <div class="d-flex flex-column align-items-center py-3">
       <span class="text-secondary fs-2">3 980 €</span>
-      <p class="fw-light m-0">Montant totaux investis</p>
+      <p class="fw-light m-0"><%= t(".total_amount_invested") %></p>
     </div>
-  </section>
-  <section class="card-info d-flex align-items-center justify-content-center rounded-pill shadow mb-3">
+  </div>
+  <div class="card-info d-flex align-items-center justify-content-center rounded-pill shadow mb-3 py-2">
     <div class="d-flex align-items-center py-3">
       <p class="fw-light text-center m-0">Toutes les souscriptions de vos investisseurs sont finalisées</p>
     </div>
-  </section>
-</div>
-<h1 class="text-primary mb-5">Projet en cours <span class="text-secondary">et à venir</span></h1>
-<section class="d-flex justify-content-between mb-3 flex-wrap ">
-  <div class='card shadow-lg mb-3'>
-  <%= image_tag("card-img-top.jpg", class: "card-img-top shadow-lg") %>
-    <div class="card-body shadow-lg mt-n5 p-4 bg-white">
-      <h5 class="card-title mb-4 fs-2 fw-normal text-dark">Titre d'un projet</h5>
-      <p class="card-text mb-4 fs-6 fw-light text-dark">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-        Dictum ullamcorper vel dolor tellus varius.
-        Venenatis blandit diam mauris mauris urna duis.
-      </p>
-      <div class="progress-container mb-5">
-        <p>Montant de la collecte: <span>1M €</span></p>
-        <div class="progress">
-          <div class="progress-bar"
-              role="progressbar"
-              style="width: 25%;"
-              aria-valuenow="25"
-              aria-valuemin="0"
-              aria-valuemax="100">
-            <small>25%</small>
-          </div>
-        </div>
-      </div>
-      <div class="d-flex justify-content-around">
-        <section class="d-flex flex-column">
-          <small class="text-muted fw-light">Secteur d'activité</small>
-          <small class="text-muted fw-bold">Foodtech</small>
-        </section>
-        <div class="border border-1"></div>
-        <section class="d-flex flex-column">
-          <small class="text-muted fw-light">C.A  des 12 derniers mois</small>
-          <small class="text-muted fw-bold">1 000 000 €</small>
-        </section>
-      </div>
-    </div>
-    <div class="card-footer d-flex justify-content-center p-3 shadow">
-      <%= svg_tag("check", class: "me-2") %>
-      <span>Financé</span>
-    </div>
-  </div>
-  <div class='card shadow-lg mb-3'>
-  <%= image_tag("card-img-top.jpg", class: "card-img-top shadow-lg") %>
-    <div class="card-body shadow-lg mt-n5 p-4 bg-white">
-      <h5 class="card-title mb-4 fs-2 fw-normal text-dark">Titre d'un projet</h5>
-      <p class="card-text mb-4 fs-6 fw-light text-dark">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-        Dictum ullamcorper vel dolor tellus varius.
-        Venenatis blandit diam mauris mauris urna duis.
-      </p>
-      <div class="progress-container mb-5">
-        <p>Montant de la collecte: <span>1M €</span></p>
-        <div class="progress">
-          <div class="progress-bar"
-              role="progressbar"
-              style="width: 100%;"
-              aria-valuenow="100"
-              aria-valuemin="0"
-              aria-valuemax="100">
-            <small>100%</small>
-          </div>
-        </div>
-      </div>
-      <div class="d-flex justify-content-around">
-        <section class="d-flex flex-column">
-          <small class="text-muted fw-light">Secteur d'activité</small>
-          <small class="text-muted fw-bold">Foodtech</small>
-        </section>
-        <div class="border border-1"></div>
-        <section class="d-flex flex-column">
-          <small class="text-muted fw-light">C.A  des 12 derniers mois</small>
-          <small class="text-muted fw-bold">1 000 000 €</small>
-        </section>
-      </div>
-    </div>
-    <div class="card-footer d-flex justify-content-center p-3 shadow">
-      <%= svg_tag("check", class: "me-2") %>
-      <span>Financé</span>
-    </div>
   </div>
 </section>
-<h1 class="text-primary mb-5 mt-5">Dernières souscriptions <span class="text-secondary">crées</span></h1>
-<section class="table-responsive mb-5">
-  <table class="table table-striped table-borderless">
-    <thead>
-      <tr>
-        <th>Projet</th>
-        <th class="text-center">Investisseurs</th>
-        <th class="text-center">Montant</th>
-        <th class="text-center">Date d'émission</th>
-        <th class="text-center">Payée ?</th>
-        <th class="text-center">Signée ?</th>
-      </tr>
-    </thead>
-    <tbody class="border">
-      <tr class="border">
-        <td>Mark</td>
-        <th>Koko Mayo</th>
-        <td class="text-center border">15,00 €</td>
-        <td class="text-center border">04/12/2022</td>
-        <td class="text-center border"><%= svg_tag("check", width: "25px")%></td>
-        <td class="text-center border"><%= svg_tag("check", width: "25px")%></td>
-      </tr>
-      <tr class="border">
-        <td>Jacob</td>
-        <th>Koko Mayo</th>
-        <td class="text-center border">25,00 €</td>
-        <td class="text-center border">04/12/2022</td>
-        <td class="text-center border"><%= svg_tag("check", width: "25px")%></td>
-        <td class="text-center border"><%= svg_tag("check", width: "25px")%></td>
-      </tr>
-      <tr>
-        <td>Larry</td>
-        <th>Koko Mayo</th>
-        <td class="text-center border">25,00 €</td>
-        <td class="text-center border">04/12/2022</td>
-        <td class="text-center border"><%= svg_tag("check", width: "25px")%></td>
-        <td class="text-center border"><%= svg_tag("check", width: "25px")%></td>
-      </tr>
-    </tbody>
-  </table>
+<%= raw t(".current_and_future_projects") %>
+<section class="d-flex justify-content-center justify-content-xl-between mb-3 flex-wrap">
+  <%= render 'partials/components/project_card' %>
+  <%= render 'partials/components/project_card' %>
 </section>
+<%= raw t(".last_subscriptions_created") %>
+<%= render 'partials/dashboard/table' %>

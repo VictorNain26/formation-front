@@ -10,21 +10,21 @@
 @import "variables/variables";
 
 // Libraries
-@import "bootstrap";
+@import 'bootstrap/scss/bootstrap';
 
 // Mixins
 
 // Components
 @import "components/buttons";
+@import "components/card_info";
 @import "components/cards";
 @import "components/file_upload";
 @import "components/forms";
 @import "components/paginations";
 @import "components/progress";
-@import "components/file_upload";
 @import "components/navbar";
-@import "components/card_info";
 @import "components/sidebar";
+@import "components/tables";
 
 // Global
 @import "rules";
