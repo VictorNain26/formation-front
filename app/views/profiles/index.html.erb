@@ -1,0 +1,58 @@
+<h1 class="text-primary mb-5 lh-5"><%= t(".profile_title") %></h1>
+<h2 class="text-primary mb-5 mt-3"><%= t(".personal_information") %></h2>
+<%= form_with(model: current_user, scope: :profiles, url: profiles_path, method: :put, local: true, class: "mt-1") do |f| %>
+    <div class="row">
+      <div class="col-lg-4 mb-4">
+        <div class="form-floating">
+          <%= f.text_field :first_name, class: "form-control", placeholder: :first_name, required: true %>
+          <%= f.label :first_name %>
+        </div>
+      </div>
+
+      <div class="col-lg-4 mb-4">
+        <div class="form-floating">
+          <%= f.text_field :last_name, class: "form-control", placeholder: :last_name, required: true %>
+          <%= f.label :last_name %>
+        </div>
+      </div>
+
+      <div class="col-lg-4 mb-4">
+        <div class="form-floating">
+          <%= f.phone_field :phone_number, class: "form-control phone-number-input", placeholder: :phone_number, required: true %>
+          <%= f.label :phone_number, class: "iti-label start-0" %>
+        </div>
+      </div>
+
+      <div class="col-lg-6 mb-4 mt-1">
+        <div class="form-floating">
+          <%= f.email_field :email, class: "form-control", placeholder: :email_field %>
+          <%= f.label :email %>
+        </div>
+      </div>
+
+      <div class="col-lg-6 mb-4 mt-1">
+        <div class="form-floating">
+          <%= f.select(:civility, ["Madame", "Monsieur"], {}, { class: "form-select select", placeholder: :civility, required: true }) %>
+          <%= f.label :civility %>
+        </div>
+      </div>
+
+      <div class="col-lg-6 mb-4 mt-1">
+        <div class="form-floating">
+          <%= f.date_field :birthdate, class: "form-control", placeholder: :birthdate, required: true %>
+          <%= f.label :birthdate %>
+        </div>
+      </div>
+
+      <div class="col-lg-6 mb-4 mt-1">
+        <div class="form-floating">
+          <%= country_select("user", "country", {}, { class: "form-select select", placeholder: :nationality, required: true })%>
+          <%= f.label :nationality %>
+        </div>
+      </div>
+    </div>
+
+  <div class="actions mt-5">
+    <%= f.submit t(".validate_edit_profile"), class: "btn btn-primary" %>
+  </div>
+<% end %>

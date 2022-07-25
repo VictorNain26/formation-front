@@ -47,6 +47,8 @@ gem "simple_form", "~> 5.1"
 
 gem "bootstrap", "~> 5.1.3"
 
+gem "select2-rails", "~> 4.0.13"
+
 # Use Sass to process CSS
 gem "sassc-rails", "~> 2.1.2"
 

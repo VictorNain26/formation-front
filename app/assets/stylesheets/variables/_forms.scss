@@ -1,8 +1,11 @@
 $input-border-radius: 3.125rem;
-$input-border-color: $primary;
+$input-border-color: $secondary ;
 $input-border-width: 2px;
 $input-focus-box-shadow: unset;
 $input-focus-border-color: $primary;
+
+$form-select-border-color: $secondary;
+$form-select-border-radius: 3.125rem;
 
 $form-floating-input-padding-t: 0;
 $form-floating-input-padding-b: 0;
