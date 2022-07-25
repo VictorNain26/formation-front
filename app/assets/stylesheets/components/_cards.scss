@@ -1,0 +1,21 @@
+.card {
+  max-width: 27rem;
+
+  .card-body {
+    border-radius: 3.125rem 3.125rem 0 0;
+
+    .card-title {
+      font-family: $secondary-family;
+    }
+
+    .card-text {
+      line-height: 1.188rem;
+    }
+  }
+
+  .card-footer {
+    align-items: center;
+    background-color: $light;
+    border: unset;
+  }
+}

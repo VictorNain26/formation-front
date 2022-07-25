@@ -1,0 +1,9 @@
+.form-floating {
+  label {
+    margin-left: 1rem;
+  }
+}
+
+.form-control:focus + label, .form-control:not(:placeholder-shown) + label {
+  background-color: $white;
+}

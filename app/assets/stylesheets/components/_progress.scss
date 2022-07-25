@@ -1,0 +1,51 @@
+.progress-container {
+  margin-bottom: 1rem;
+
+  p {
+    text-align: center;
+    margin: 0 auto;
+    padding: 1rem 4.719rem;
+    border-radius: 1.563rem 1.563rem 0 0;
+    font-size: 1rem;
+    font-weight: 300;
+    color: $dark;
+    background: rgba(67, 66, 66, 0.04);
+
+    span {
+      font-size: 1rem;
+      font-weight: 400;
+      color: $warning;
+    }
+  }
+
+  .progress {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    border-radius: 0 0 50rem 50rem;
+    overflow: visible;
+
+    span {
+      font-size: 1rem;
+      font-weight: 400;
+    }
+
+    .progress-bar {
+      position: relative;
+      height: 100%;
+      overflow: visible;
+      border-radius: 0 0 50rem 50rem;
+      background: linear-gradient(270deg, #F59C00 17%, #E63812 100%);
+
+      small {
+        position: absolute;
+        right: 0;
+        bottom: -1.2rem;
+        font-size: 1rem;
+        font-weight: 700;
+        line-height: 1.188rem;
+        color: $warning;
+      }
+    }
+  }
+}

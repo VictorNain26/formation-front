@@ -1,0 +1,12 @@
+fr:
+  homes:
+    index:
+      button: Découvrir notre process de sélection
+      badges:
+        accepted: Accepté
+        pending: En attente de validation
+        refused: Refusé
+        not_sent: Non envoyé
+      input:
+        mail: E-mail
+        choose_file: Choisir un fichier
