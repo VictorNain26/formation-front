@@ -1,2 +1,1 @@
-// Configure your import map in config/importmap.rb. Read more: https://github.com/rails/importmap-rails
-import "./inlineSvg.js"
+import inline from "/home/victor/code/VictorNain26/capsens/formation-front/node_modules/inline-svg/dist/inlineSVG.min.js"
