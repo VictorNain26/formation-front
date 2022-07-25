@@ -6,6 +6,7 @@
 @import "variables/cards";
 @import "variables/forms";
 @import "variables/paginations";
+@import "variables/tables";
 @import "variables/variables";
 
 // Libraries
@@ -15,14 +16,15 @@
 
 // Components
 @import "components/buttons";
+@import "components/card_info";
 @import "components/cards";
 @import "components/file_upload";
 @import "components/forms";
 @import "components/paginations";
 @import "components/progress";
-@import "components/file_upload";
 @import "components/navbar";
 @import "components/sidebar";
+@import "components/tables";
 
 // Global
 @import "rules";

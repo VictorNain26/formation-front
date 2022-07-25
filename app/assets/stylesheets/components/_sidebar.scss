@@ -1,6 +1,8 @@
 .sidebar {
+  position: sticky;
+  top: 120px;
   width: 18.243rem;
-  height: calc(100vh - 119px);
+  height: calc(100vh - 120px);
 }
 
 .active path {

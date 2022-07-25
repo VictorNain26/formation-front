@@ -1,0 +1,15 @@
+.table {
+  th {
+    text-align: center;
+    font-family: $secondary-family;
+    padding-bottom: 0.5rem;
+
+    &:first-child {
+      text-align: start;
+    }
+  }
+
+  td {
+    border-left: 1px solid $grey;
+  }
+}

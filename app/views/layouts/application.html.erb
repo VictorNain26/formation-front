@@ -11,12 +11,12 @@
     <%= yield(:javascript) %>
   </head>
   <body>
-    <%= render "partials/navbar"%>
-    <section class="d-flex flex-row">
-      <%= render "partials/sidebar"%>
-      <main>
+    <%= render "partials/navbar" %>
+    <main class="d-flex">
+      <%= render "partials/sidebar" %>
+      <section class="mt-5 d-flex flex-column container">
         <%= yield %>
-      </main>
-    </section>
+      </section>
+    </main>
   </body>
 </html>

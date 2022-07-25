@@ -1,0 +1,27 @@
+<h1 class="text-primary"><%= t(".dashboard") %></h1>
+<section class="d-flex flex-row my-5 justify-content-center justify-content-md-between flex-wrap">
+  <div class="card-info d-flex align-items-center justify-content-center rounded-pill shadow mb-3 py-2">
+    <div class="d-flex flex-column align-items-center py-3">
+      <span class="text-secondary fs-2">4</span>
+      <p class="fw-light m-0"><%= t(".number_of_investors") %></p>
+    </div>
+  </div>
+  <div class="card-info d-flex align-items-center justify-content-center rounded-pill shadow mb-3 py-2">
+    <div class="d-flex flex-column align-items-center py-3">
+      <span class="text-secondary fs-2">3 980 €</span>
+      <p class="fw-light m-0"><%= t(".total_amount_invested") %></p>
+    </div>
+  </div>
+  <div class="card-info d-flex align-items-center justify-content-center rounded-pill shadow mb-3 py-2">
+    <div class="d-flex align-items-center py-3">
+      <p class="fw-light text-center m-0">Toutes les souscriptions de vos investisseurs sont finalisées</p>
+    </div>
+  </div>
+</section>
+<%= raw t(".current_and_future_projects") %>
+<section class="d-flex justify-content-center justify-content-xl-between mb-3 flex-wrap">
+  <%= render 'partials/components/project_card' %>
+  <%= render 'partials/components/project_card' %>
+</section>
+<%= raw t(".last_subscriptions_created") %>
+<%= render 'partials/dashboard/table' %>
